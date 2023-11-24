@@ -14,10 +14,11 @@ The completion and follow-up of the project would be able to be tracked using Gi
 
 ### Expected Deliverables
 
-- A CRA Template to be easily initialized with a React Dapp as submodule.
-- A React Dapp + Typescript fully integrated with Ethers.
+- A Create-React-App Template to be easily initialized with a React Dapp as submodule.
+- A React Dapp + Typescript fully integrated with Ethers and cartesi-client.
 - A Backend database Dapp managed by Cartesi machine, also running with Typescript.
 - The app will also be served on github pages so user can check the demo before develop on top of it.
+- Readme with instructions to install, run locally and deploy live to Catesi Machine. Also will have diagrams explaining how app works and how to extend it.
 
 ### Milestones and Timeline
 
@@ -31,24 +32,19 @@ The completion and follow-up of the project would be able to be tracked using Gi
 
 ### Appendices
 
-- https://github.com/cartesi/rollups-examples/tree/main/echo-js
-- https://github.com/cartesi/rollups-deployment
-- https://github.com/cartesi/rollups-contracts/tree/main/onchain/rollups/deployments
+**Front-end integration package**
 
-### Questions
+- https://github.com/prototyp3-dev/cartesi-client
 
-- How SQLite maintain consistent running on Docker at Cartesi Machine?
-- This [link](https://github.com/cartesi/rollups/tree/main/onchain/rollups/deployments) appear on multiple places during documentation, it should be updated to [this](https://github.com/cartesi/rollups-contracts/tree/main/onchain/rollups/deployments).
+**Back-end deployment tool**
 
-## Requirements for Grant
+- https://docs.sunodo.io/
+- https://www.npmjs.com/package/@cartesi/rollups
 
-- Develop a SQLite-based full-stack DApp template.
-- Integrate wallet functionality for Ethereum or compatible blockchains.
-- Create a user-friendly and customizable frontend using React.
-- Ensure ease of use and documentation suitable for junior developers including readme documentation, with an architecture diagram.
-- Provide concise instructions for the deployment process.
-- The template should include a feature to execute commands equivalent to those in the [frontend-console example](https://github.com/cartesi/rollups-examples/tree/main/frontend-console).
-- Add your project to the Discord Spotlight channel and to [rolluplab.io](http://rolluplab.io)
-- **GitHub repo must be licensed under the terms of the Apache 2.0
-  open source license**
-- Please note that a KYC process will be completed for the release of funding.
+**Cartesi Examples**
+
+- https://github.com/cartesi/rollups-examples/tree/main
+
+**Backend Typescript Framework**
+
+- https://github.com/tuler/deroll
