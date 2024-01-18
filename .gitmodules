@@ -1,0 +1,6 @@
+[submodule "backend"]
+	path = backend
+	url = https://github.com/doiim/cartesi-ts-sqlite
+[submodule "frontend"]
+	path = frontend
+	url = https://github.com/doiim/cartesi-ts-react-sqlite
