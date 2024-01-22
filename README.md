@@ -2,11 +2,41 @@
 
 The project is a React application built with Create React App and utilizes TypeScript for type safety. It is managed using npm as the package manager. The goal of the project is to create a template that streamlines the process of kickstarting new projects. The template incorporates the latest version of React and integrates with Ethers, allowing for seamless interaction with the underlying blockchain. For testing purposes, a pre-deployed demo on the Sepolia Network is available for users to explore before starting their own development.
 
+## Bootstraping
+
+### Frontend
+
+For development frontend app you have 2 installation options:
+
+1. Cloning the frontend repository
+
+```sh
+git clone https://github.com/doiim/cartesi-ts-react-sqlite
+```
+
+2. Use create-react-app template
+
+```sh
+npx create-react-app my-app --template cartesi-ts-sqlite
+```
+
+Obs.: Additional information on how to configure and run the app could be found at their own README.md files.
+
+### Backend
+
+For the backend at the moment we only have the option to clone the backend repo, a Sunodo template would be available soon:
+
+```sh
+git clone https://github.com/doiim/cartesi-ts-sqlite
+```
+
+Obs.: Additional information on how to configure, run and deploy backend to testnets could be found at their own README.md files.
+
 ## How this project is structure
 
 ![Cartesi project structure](https://github.com/doiim/cartesi-react-bootstrap/assets/13040410/2ab19829-997b-4964-82ca-b038f3fe2dd2)
 
-### Front End [(github)](https://github.com/doiim/cartesi-ts-react-sqlite)
+### Frontend [(github)](https://github.com/doiim/cartesi-ts-react-sqlite)
 
 A `Create React App` template that runs a `Typescript` supported app with `CSS Modules`. This app uses `Apollo Client` to update `Notices` from backend services and normal requests to call `Inspect` endpoint for fetch current state of the database. To call `Advance` inputs, the app uses `Ethers V5` to communicate with Backend EVM.
 
@@ -37,41 +67,13 @@ A `Create React App` template that runs a `Typescript` supported app with `CSS M
 3. Then **Frontend** then make a Inspect call to grab the current status of database from **Validator** service.
 4. Once data is returned, it automatically updated the Products table.
 
-### Back End [(github)](https://github.com/doiim/cartesi-ts-sqlite)
+### Backend [(github)](https://github.com/doiim/cartesi-ts-sqlite)
 
 A `Sunodo` template machine that runs a `Typescript` node service along with `viem` to convert values from/to Hex strings. We could have switched to `Ethers` but the idea was to reduce the amount to code, and the `Sunodo` template used already have support to `viem`. The database runs `SQLite` with WASM support due to the nature of the Risc-V Node has no native support to `SQLite` bindings.
 
 This will run an [anvil](https://book.getfoundry.sh/reference/anvil/) node as a local blockchain, and the GraphQL service and Inspect Service.
 
 The Database consists in a simple SQLite database with a table called PRODUCTS, each product has an ID and a NAME. IDs are unique so in case user tries to register PRODUCT with same ID the backend will reject the attempt.
-
-### Scope and Methodology
-
-The idea is to create a template for create-react-app to facilitate kickstart projects. The template will use the last version of React and integration with Ethers to be able to send inputs to Sepolia Network and receive back notices from Cartesi Machine, that runs an app with a SQLite database. The inputs will be limited to serve as example for different interaction both on frontend and backend.
-
-UML Diagrams related to the project will be created using Google Drawing and will be pasted on this readme markdown.
-
-A demo of the project will be served at Github Pages and will allow any user that navigates to the app interact with SQLite database.
-
-The completion and follow-up of the project would be able to be tracked using Github issues.
-
-### Expected Deliverables
-
-- A Create-React-App Template to be easily initialized with a React Dapp as submodule.
-- A React Dapp + Typescript fully integrated with Ethers and cartesi-client.
-- A Backend database Dapp managed by Cartesi machine, also running with Typescript.
-- The app will also be served on github pages so user can check the demo before develop on top of it.
-- Readme with instructions to install, run locally and deploy live to Catesi Machine. Also will have diagrams explaining how app works and how to extend it.
-
-### Milestones and Timeline
-
-- The project should took 2 weeks of work spammed on a range of 2 months starting by the day of grant confirmation.
-
-### Team Details
-
-- Filipe Montanari Soccol (Doiim CTO)
-  - [Linkedin](https://www.linkedin.com/in/filipesoccol)
-  - [GitHub](https://github.com/filipesoccol)
 
 ### Appendices
 
