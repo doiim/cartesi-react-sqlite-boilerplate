@@ -4,3 +4,6 @@
 [submodule "frontend"]
 	path = frontend
 	url = https://github.com/doiim/cartesi-ts-react-sqlite
+[submodule "cra"]
+	path = cra
+	url = https://github.com/doiim/cra-template-cartesi-ts-sqlite
