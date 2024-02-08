@@ -2,6 +2,8 @@
 
 The project is a React application built with Create React App and utilizes TypeScript for type safety. It is managed using npm as the package manager. The goal of the project is to create a template that streamlines the process of kickstarting new projects. The template incorporates the latest version of React and integrates with Ethers, allowing for seamless interaction with the underlying blockchain. For testing purposes, a pre-deployed demo on the Sepolia Network is available for users to explore before starting their own development.
 
+[Live Demo](https://doiim.github.io/cartesi-ts-react-sqlite/)
+
 ## Bootstraping
 
 ### Frontend
@@ -74,6 +76,8 @@ A `Sunodo` template machine that runs a `Typescript` node service along with `vi
 This will run an [anvil](https://book.getfoundry.sh/reference/anvil/) node as a local blockchain, and the GraphQL service and Inspect Service.
 
 The Database consists in a simple SQLite database with a table called PRODUCTS, each product has an ID and a NAME. IDs are unique so in case user tries to register PRODUCT with same ID the backend will reject the attempt.
+
+## For Maintainers
 
 ### Appendices
 
